@@ -78,7 +78,7 @@ plt.show()
 
 &ensp;&ensp;&ensp;&ensp;接下来需要配置图像参数以便我们能够更好的查看分类的情况。我们主要需要对图像进行网格化并用不同的颜色区分不同的预测值以及相应分类的区间，最终以Iris数据集第一列作为横轴，第二列作为纵轴，预测值作为区分变量即可得到以下图像。
 
-![鸢尾花数据集分类结果（线性核SVC）](https://github.com/trybesthbk/mechine-learning/blob/master/%E5%9B%BE%E7%89%87/%E9%B8%A2%E5%B0%BE%E8%8A%B1%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%86%E7%B1%BB%E7%BB%93%E6%9E%9C%EF%BC%88%E7%BA%BF%E6%80%A7%E6%A0%B8SVC).png)
+![鸢尾花数据集分类结果-线性核SVC](https://github.com/trybesthbk/mechine-learning/blob/master/%E5%9B%BE%E7%89%87/%E9%B8%A2%E5%B0%BE%E8%8A%B1%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%86%E7%B1%BB%E7%BB%93%E6%9E%9C-%E7%BA%BF%E6%80%A7%E6%A0%B8SVC.png)
 
 
 &ensp;&ensp;&ensp;&ensp;从图中可以看出，通过线性划分我们很好的将这三类数据进行了分类，大部分点都处于他们应该位于其预测值的分类区间内。但我们也可以看到图中也有许多点进入了错误的区间，也就是第二章节感知机中的损失，显然我们上述的线性SVC方法不能说是最优的，为了确定更好的分类方法我们往往可以通过对多种分类模型进行对比，因此我们通过SVC/NuSVC函数对通过调节它的核函数及其相应参数即可得到不同的分类图像,如下图所示：
